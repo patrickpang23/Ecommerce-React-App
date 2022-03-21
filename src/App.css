@@ -1,38 +1,326 @@
-.App {
+* {
+  /* IMPORTANT */
+
+  /* asterick (universal selector) is useful when you want to select all elements on the page. */
+
+  margin: 0;
+  padding: 0;
+  font-family: georgia, sans-serif;
+}
+
+/* Template Colors antiquewhite */
+
+header {
+  width: 100%;
+  display: table;
+  position: sticky;
+  background-color: antiquewhite;
+  padding: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.hero-image {
+  background-image: url("/public/assets/images/three.jpeg");
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* changing default value of rem from 16px to 10px */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.hero-text {
+  text-align: center;
+  color: wheat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-text-info {
+  width: 300px;
+  margin: 0 75px;
+}
+
+.horizontal {
+  /* relative caused it to be adjusted away from normal position */
+  position: relative;
+  top: 20px;
+  height: 12px;
+  background: whitesmoke;
+}
+
+.cta-button {
+  background-color: whitesmoke;
+  padding: 7px;
+  border-radius: 7px;
+  transition-duration: 0.5s;
+  font-weight: bold;
+}
+
+.cta-button a {
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: yellow;
+}
+
+.navigation {
+  margin: 0, auto;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 25px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+nav ul li a:hover {
+  background: yellow;
+}  
+
+.active {
+  background: yellow;
+}
+
+.categories-1 {
+  margin: 70px 0;
+}
+
+.small-container {
+  /*max-width: 1080px;*/
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-3 {
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.col-3 img {
+  width: 100%;
+  margin-bottom: -8px;
+}
+
+.header-one h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-detail-1 {
+  background: #e5dede;
+  padding: 8px;
+}
+
+.contacts {
+  /* This is the H1 of contact page */
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-form {
+  /* flex aligns in a row */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contactPage {
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.form-wrapper {
+  padding: 10px;
+  max-width: 350px;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 6%);
+  margin: 0 auto;
+  background-color: #e3e2e2;
+  border-radius: 5px;
+}
+
+.submit-button {
+  color: black;
+  transition-duration: 0.5s;
+  border-radius: 10px;
+
+  /* top-down, left-right */
+  padding: 6px 15px;
+}
+
+.submit-button:hover {
+  background: yellow;
+}
+
+.body-background {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  top: 10px;
+  left: 15px;
+
+  /* fixed-relative to the viewport */
+  position: fixed;
+}
+
+.heading-one {
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.categories {
+  padding-top: 120px;
+  margin: 0 30px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  margin: 10px auto;
+  max-width: 800px;
+} */
+
+ .card-image {
+  height: 60%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+} 
+
+.cardItemImageContainer {
+  height: 60%;
+}
+
+.card-detail {
+  background: #e5dede;
+  padding: 10px;
+}
+
+#cardAlign {
+  margin: 1%;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* @media screen and (max-width: 780px) {
+  .col-3 {
+    min-width: 190px;
+  }
+} */
+
+@media screen and (max-width: 640px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .heading-one h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    left: 3px;
+    height: 35px;
+    top: 14px;
+  }
+
+  nav li {
+    padding: 10px;
+    font-size: 17px;
+  }
+
+  nav ul {
+    margin-right: -10px;
+  }
+
+  .row-1 {
+    flex-direction: column;
+  }
+
+  .form-wrapper {
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    height: 35px;
+    top: 12px;
+  }
+
+  nav ul li a {
+    font-size: 11px;
+  }
+
+  .form-wrapper {
+    max-width: 250px;
+  }
+}
+
+footer {
+  padding: 10px;
+  position: sticky;
+  top: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
