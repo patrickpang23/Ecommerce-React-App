@@ -298,18 +298,18 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 390px) {
   .logo {
-    height: 35px;
-    top: 12px;
+    /* height: 35px; */
+    top: 10px;
   }
 
   nav ul li a {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .form-wrapper {
-    max-width: 250px;
+    max-width: 300px;
   }
 }
 

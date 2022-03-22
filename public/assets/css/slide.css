@@ -44,3 +44,38 @@
 }
 
 span {display:none}
+
+
+@media (max-width: 390px) {
+    #slide-container {
+        width: 350px;
+        height: 300px;
+    }
+    #slider-image-2:target~#image-container {
+        left: -350px;
+    }
+    #slider-image-3:target~#image-container {
+        left: -700px;
+    }
+    #slider-button {
+        display: inline-block;
+        background-color: white;
+        border: solid black 1px;
+        margin-right: 1%;
+       
+    }
+    #slider-image {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        max-width: 350px;
+        max-height: 600px;
+    }
+    #button-container {
+        top: -100px;
+        position: relative;
+        margin-top: -75%;
+        top: -151px;
+        
+    }
+}

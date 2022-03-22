@@ -1,10 +1,12 @@
 import React from "react";
+// How I routed my pages together
+import { Link } from "react-router-dom";
 const hero = { backgroundImage: `url(assets/images/three.jpeg)` };
 function HeroImage() {
   return (
     // change to className
-  
-      <div className="hero-image" style={hero}>
+
+    <div className="hero-image" style={hero}>
       <div className="hero-text">
         <section className="hero-text-info">
           <h2>
@@ -25,15 +27,14 @@ function HeroImage() {
           <br />
           <div>
             <div className="cta-button">
-              <a href="product.html">Click to Explore Products</a>
+              <Link to="/products">Click to Explore Products</Link>
             </div>
           </div>
           <br />
           <div className="horizontal"></div>
         </section>
       </div>
-      </div>
-    
+    </div>
   );
 }
 
