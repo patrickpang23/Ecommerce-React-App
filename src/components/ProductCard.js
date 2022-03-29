@@ -11,7 +11,7 @@ const {imgSrc, title, description, price, key} = props;
           <b>{title}</b>
         </p>
         <p>{description}</p>
-        <p>{price}</p>
+        <p>${price}</p>
       </div>
     </div>
   );

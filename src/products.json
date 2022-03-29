@@ -3,72 +3,72 @@
         "image":"assets/images/yeti.jpeg",
         "title": "Yeti",
         "description": "Turquois Bottle",
-        "price": "$30"
+        "price": 30
     }, 
     {
         "image":"assets/images/navy.jpeg",
         "title": "Sports Net",
         "description": "Blue Bottle",
-        "price": "$35"
+        "price": 35
     }, 
     {
         "image":"assets/images/hydro.jpeg",
         "title": "Hydro",
         "description": "Yellow Bottle",
-        "price": "$25"
+        "price": 25
     }, 
     {
         "image":"assets/images/deep-water.jpeg",
         "title": "Deep Water",
         "description": "Sky Blue Bottle",
-        "price": "$40"
+        "price": 40
     }, 
     {
         "image":"assets/images/clear.jpeg",
         "title": "Sunny Days",
         "description": "Clear Bottle",
-        "price": "$65"
+        "price": 65
     }, 
     {
         "image":"assets/images/green.jpeg",
         "title": "Stoke",
         "description": "Green Bottle",
-        "price": "$20"
+        "price": 20
     }, 
     {
         "image":"assets/images/not.jpeg",
         "title": "More Drip",
         "description": "Wood Bottle",
-        "price": "$38"
+        "price": 38
     }, 
     {
         "image":"assets/images/klean.jpeg",
         "title": "Mr. Clean",
         "description": "Chrome Bottle",
-        "price": "$50"
+        "price": 50
     }, 
     {
         "image":"assets/images/bamboo.jpg",
         "title": "Treat Nature",
         "description": "Bamboo Bottle",
-        "price": "$55"
+        "price": 55
     }, 
     {
         "image":"assets/images/darkgreen.jpeg",
         "title": "Splash",
         "description": "Dark Green Bottle",
-        "price": "$40"
+        "price": 40
     }, 
     {
         "image":"assets/images/losangeles.jpeg",
         "title": "Yeeted",
         "description": "White Design Bottle",
-        "price": "$20"
+        "price": 20
     }, 
     {
         "image":"assets/images/love.png",
-        "title": "AquaLlova",
+        "title": "AquaLova",
         "description": "Light Teal/Pink Bottle",
-        "price": "$25"
+        "price": 25
     }
 ]

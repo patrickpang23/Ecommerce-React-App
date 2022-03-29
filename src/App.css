@@ -251,6 +251,24 @@ nav ul li a:hover {
   padding-bottom: 1rem;
 }
 
+.filterButton {
+  display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.under {
+  margin-left: 1rem;
+}
+
+.above {
+  margin-left: 1rem;
+}
+
+.clear {
+  margin-left: 1rem;
+}
+
 @media screen and (max-width: 900px) {
   .row {
     grid-template-columns: repeat(2, 1fr);

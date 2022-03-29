@@ -1,0 +1,25 @@
+-- CREATE DATABASE Ecommerce;
+
+-- CREATE TABLE Products (
+--  product_id INT AUTO_INCREMENT,
+-- Image VARCHAR(100),
+-- Title VARCHAR(100),
+-- Description VARCHAR(100),
+-- Price INT,
+-- PRIMARY KEY (product_id)
+-- );
+
+-- INSERT INTO Products (Image, Title, Description, Price)
+-- VALUES 
+-- ("assets/images/yeti.jpeg", "Yeti", "Turquoise Bottle", 30),
+-- ("assets/images/navy.jpeg", "Sports Net", "Blue Bottle", 35),
+-- ("assets/images/hydro.jpeg", "Hydro", "Yellow Bottle", 25),
+-- ("assets/images/deep-water.jpeg", "Deep Water", "Sky Blue Bottle", 40),
+-- ("assets/images/clear.jpeg", "Sunny Days", "Clear Bottle", 65),
+-- ("assets/images/green.jpeg", "Stoke", "Green Bottle", 20),
+-- ("assets/images/not.jpeg", "More Drip", "Wood Bottle", 38),
+-- ("assets/images/klean.jpeg", "Mr. Clean", "Chrome Bottle", 50),
+-- ("assets/images/bamboo.jpg", "Treat Nature", "Bamboo Bottle", 55),
+-- ("assets/images/darkgreen.jpeg", "Splash", "Dark Green Bottle", 35),
+-- ("assets/images/losangeles.jpeg", "Yeeted", "White Design Bottle", 20),
+-- ("assets/images/love.png", "AquaLova", "Light Teal/Pink Bottle", 25)
