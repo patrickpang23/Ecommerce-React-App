@@ -218,6 +218,7 @@ nav ul li a:hover {
 .categories {
   padding-top: 120px;
   margin: 0 30px;
+  min-height: 79vh;
 }
 
 .row {

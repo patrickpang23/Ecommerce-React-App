@@ -46,3 +46,5 @@ app.use(express.static(path.join(__dirname, "./build")));
 app.listen(process.env.PORT || 4000, () => {
   console.log(`console server listening port 4000`);
 });
+
+// if heroku app fails, type in "heroku restart" in terminal
