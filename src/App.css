@@ -111,7 +111,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background: yellow;
-}  
+}
 
 .active {
   background: yellow;
@@ -226,16 +226,16 @@ nav ul li a:hover {
   grid-gap: 40px;
   margin: 10px auto;
   max-width: 800px;
-} */
+}
 
- .card-image {
+.card-image {
   height: 60%;
 }
 
 .card-image img {
   width: 100%;
   height: 100%;
-} 
+}
 
 .cardItemImageContainer {
   height: 60%;
@@ -253,8 +253,8 @@ nav ul li a:hover {
 
 .filterButton {
   display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
+  justify-content: center;
+  padding-bottom: 1rem;
 }
 
 .under {
@@ -274,12 +274,6 @@ nav ul li a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* @media screen and (max-width: 780px) {
-  .col-3 {
-    min-width: 190px;
-  }
-} */
 
 @media screen and (max-width: 640px) {
   .row {
@@ -318,7 +312,6 @@ nav ul li a:hover {
 
 @media screen and (max-width: 390px) {
   .logo {
-    /* height: 35px; */
     top: 10px;
   }
 
@@ -341,4 +334,3 @@ footer {
   font-size: 14px;
   box-sizing: border-box;
 }
-

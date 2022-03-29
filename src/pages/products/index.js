@@ -7,9 +7,9 @@ import axios from "axios";
 function Product() {
   const [query, setQuery] = useState("");
   const [items, setItems] = useState([]);
-  useEffect(()=> {
-axios.get("http://localhost:4000/products").then(response => {setItems(response.data)}).catch(err => {throw err})
-  }, [])
+  useEffect(() => {
+    axios.get("/api/products").then((response) => {setItems(response.data)}).catch((err) => {throw err})
+  }, []);
   const lowPrice = () => {
     setQuery("Under 40");
   };
@@ -19,7 +19,7 @@ axios.get("http://localhost:4000/products").then(response => {setItems(response.
   const clearFilter = () => {
     setQuery("");
   };
-  console.log(items)
+  console.log(items);
   return (
     // CARD 1
     <section class="categories">
@@ -29,34 +29,55 @@ axios.get("http://localhost:4000/products").then(response => {setItems(response.
         </h2>
       </div>
       <div class="filterButton">
-        <input onChange={(e) => setQuery(e.target.value)} placeholder="Search Items"/>
-        <button class="under" onClick={lowPrice}>Under $40</button>
-        <button class="above" onClick={highPrice}>Above $50</button>
-        <button class="clear" onClick={clearFilter}>Clear Filter</button>
+        <input
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search Items"
+        />
+        <button class="under" onClick={lowPrice}
+        >
+          Under $40
+        </button>
+        <button class="above" onClick={highPrice}
+        >
+          Above $50
+        </button>
+        <button class="clear" onClick={clearFilter}
+        >
+          Clear Filter
+        </button>
       </div>
       <div class="row">
-        {/* FILTER STARTS HERE */}
-        {items.filter((i) => {
-          if (query === "") {
-            return i;
-          } else if (i.title.toLowerCase().includes(query.toLowerCase())) {
-            return i;
-          }
-          if (query === "Under 40" && i.price < 40) {
-            return i;
-          }
-          if (query === "Above 50" && i.price > 50) {
-            return i;
-          }
-        }).map((record) => (
-          <ProductCard
-            key={record.product_id}
-            imgSrc={record.Image}
-            title={record.Title}
-            description={record.Description}
-            price={record.Price}
-          />
-        ))}
+        {items
+          .filter((i) => {
+            console.log("query", query);
+            if (query === "") {
+              console.log(i);
+              return i;
+            }
+          else if (i.Title.toLowerCase().includes(query.toLowerCase())) {
+              console.log(i.Title);
+              return i;
+            }
+            if (query === "Under 40" && i.Price < 40) {
+              console.log("string3");
+              return i;
+            }
+            if (query === "Above 50" && i.Price > 50) {
+              console.log("string4");
+              return i;
+            }
+          })
+          .map((record) => (
+            
+            <ProductCard
+              key={record.product_id}
+              imgSrc={record.Image}
+              title={record.Title}
+              description={record.Description}
+              price={record.Price}
+            />
+          ))}
+        
       </div>
     </section>
   );
