@@ -1,6 +1,8 @@
 const ProductCard = (props) => {
 const {imgSrc, title, description, price, key} = props;
 
+// By using props it enables you to configure a component (ProductCard)
+
   return (
     <div className="card" key={key}>
       <div className="card-image cardItemImageContainer">

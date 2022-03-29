@@ -14,7 +14,7 @@ function HeroImage() {
               <i>Discover</i>
             </strong>{" "}
             bottles that fit all your
-            <i>needs</i>
+            <i> needs</i>
           </h2>
           <br />
           <div className="horizontal"></div>

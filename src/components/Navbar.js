@@ -4,6 +4,7 @@ import {
   } from "react-router-dom";
 
 const Navbar = () => {
+  // This is where I am storing my header and navigation.
   return (
     <header>
       <Link to="/">
