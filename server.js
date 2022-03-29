@@ -43,6 +43,10 @@ app.get("/api/products", (req, res) => {
 
 app.use(express.static(path.join(__dirname, "./build")));
 
+app.use((req, res, next) => {
+    res.sendFile(path.join(__dirname, './build', 'index.html'))
+});
+
 app.listen(process.env.PORT || 4000, () => {
   console.log(`console server listening port 4000`);
 });
