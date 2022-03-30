@@ -25,7 +25,12 @@ const Contact = () => {
             </tr>
             <tr>
               <td>
-                <input type="text" placeholder="First Name" pattern="[A-Za-z]*" required />
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  pattern="[A-Za-z]*"
+                  required
+                />
               </td>
             </tr>
             <tr>
@@ -33,7 +38,12 @@ const Contact = () => {
             </tr>
             <tr>
               <td>
-                <input type="text" placeholder="Last Name" pattern="[A-Za-z]*" required />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  pattern="[A-Za-z]*"
+                  required
+                />
               </td>
             </tr>
             <tr>
@@ -41,7 +51,12 @@ const Contact = () => {
             </tr>
             <tr>
               <td>
-                <input type="tel" placeholder="704-234-2354" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <input
+                  type="tel"
+                  placeholder="704-234-2354"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
               </td>
             </tr>
             <tr>

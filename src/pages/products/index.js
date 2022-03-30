@@ -70,6 +70,7 @@ function Product() {
           .filter((i) => {
             console.log("query", query);
 
+            // made this so filter doesn't clear all items. Let's us use lowerCase letters to search instead of only upperCase letters. This is my product type.
             if (query === "") {
               console.log(i);
               return i;

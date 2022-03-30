@@ -1,7 +1,5 @@
 import React from "react";
-import {
-    Link
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // This is where I am storing my header and navigation.

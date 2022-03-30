@@ -10,17 +10,16 @@ function App() {
   return (
     <>
       <Router>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      <Footer />
+        <Footer />
       </Router>
     </>
   );
 }
-
 
 export default App;

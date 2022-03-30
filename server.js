@@ -16,6 +16,7 @@ const db_config = {
 };
 
 app.use(cors());
+// express.json parses the data from the api so we can use it with our app
 app.use(express.json());
 
 // if connection does not exist, return empty array
