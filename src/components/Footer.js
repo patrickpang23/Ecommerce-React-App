@@ -13,7 +13,7 @@ const Footer = () => {
       <a href="https://www.pinterest.com" aria-label="pinterest">
         <i className="fab fa-pinterest"></i>
       </a>
-      <p>&copy; 2021 Patrick Pang, All Rights Reserved</p>
+      <p>&copy; 2022 Patrick Pang, All Rights Reserved</p>
     </footer>
   );
 };
