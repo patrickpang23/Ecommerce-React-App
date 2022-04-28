@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "../../components/ProductCard";
-// By importing axios it helps connect .json and db
+// By importing axios it helps connect db
 import axios from "axios";
 
 // This allows us to do .get to connect 4000 with 3000
@@ -17,6 +17,7 @@ function Product() {
 
   useEffect(() => {
     // axios makes a request to the server .get("/api/products")
+    // axios is taking the parse data from the api 
     axios
       .get("/api/products")
       .then((response) => {

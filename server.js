@@ -7,7 +7,7 @@ const app = express();
 
 let connection;
 
-// This sets the connection
+// This sets the connection with heroku
 const db_config = {
   host: "us-cdbr-east-05.cleardb.net",
   user: "bcf040fc1a794a",
